@@ -1,0 +1,1 @@
+ALTER TABLE event ALTER COLUMN timeline_id SET NOT NULL;

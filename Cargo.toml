@@ -1,0 +1,15 @@
+[package]
+name = "timelines"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+time = { version = "0.3.41", features = ["macros", "serde"] }
+sqlx = { version = "0.8", features = [
+  "runtime-tokio-rustls",
+  "postgres",
+  "macros",
+  "derive",
+  "time",
+] }
+tokio = { version = "1.46", features = ["full"] }
