@@ -13,6 +13,13 @@ pub struct Event {
     pub image: Option<String>,
 }
 
+pub struct EventDto {
+    pub title : Option<String>,
+    pub description: Option<String>,
+    pub timeline_id: i32,
+    pub image: Option<String>,
+}
+
 impl Event {
     pub fn new(
         name: Option<String>,
